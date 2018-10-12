@@ -1,0 +1,19 @@
+language: pyhton
+python:
+  - "3.7"
+
+#command to install dependencies
+install: 
+  - pip install -r requirements.txt
+
+# command to run tests
+script:
+  - pytest
+  - sh run_travis.sh
+
+# command to set up services
+services: postgresql
+
+# command to set up environmental variables
+env: 
+  - BLOG_DATABASE=sqlite:///db.db
