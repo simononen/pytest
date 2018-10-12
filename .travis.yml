@@ -1,13 +1,13 @@
 language: pyhton
 python:
-  - "2.7"
+  - 2.7
   - "3.4"
   - "3.6"
   - 3.7
 
 #command to install dependencies
 install:
-  - pip3 install Flask
+  - pip install Flask
 
 # command to run tests
 script:
